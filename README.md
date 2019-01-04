@@ -3,7 +3,7 @@
 This script adds molecules in random positions above or below a membrane using
 Poisson disk sampling (https://en.wikipedia.org/wiki/Supersampling#Poisson_disc) to make sure points are not close to each other. 
 All files concerining this cript are in the 'insertion' folder 
-###Prerequesites
+### Prerequesites
 Requires mdanalysis and cython among other dependencies which can be intalled as follows:
 ```
 pip install mdanalysis
@@ -28,6 +28,13 @@ python above_membrane.py -h
 This script parses the output of umbrella sampling files in gromacs and runs Weighted Histogram Analysis Method using either the method included within gromacs or the 
 Grossfiled implementation (see http://membrane.urmc.rochester.edu/?page_id=126). Note that this script is only a python wrapper for both implementions.
 All files concerining this script are in the 'umbrella' folder. 
+### Prerequesites
+Requires gromacs versions > 5 and for the grossfiled wham implementation obtained from http://membrane.urmc.rochester.edu/?page_id=126 to be complied as follows
+'''
+cd wham
+make clean
+make
+'''
 ### Examples
 The example script can be run as follows:
 ```
