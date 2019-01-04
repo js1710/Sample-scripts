@@ -30,11 +30,11 @@ Grossfiled implementation (see http://membrane.urmc.rochester.edu/?page_id=126).
 All files concerining this script are in the 'umbrella' folder. 
 ### Prerequesites
 Requires gromacs versions > 5 and for the grossfiled wham implementation obtained from http://membrane.urmc.rochester.edu/?page_id=126 to be complied as follows
-'''
+```
 cd wham
 make clean
 make
-'''
+```
 ### Examples
 The example script can be run as follows:
 ```
